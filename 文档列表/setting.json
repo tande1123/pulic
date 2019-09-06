@@ -1,0 +1,46 @@
+{
+  "vetur.format.options.tabSize": 4,
+  "vetur.format.options.useTabs": true,
+  "vetur.format.defaultFormatterOptions": {
+    "prettier": {
+      "semi": true, //默认添加分号
+      "printWidth": 300, //属性超过160个字符自动换行
+      "singleQuote": false, // js中双引号改成单引号
+      "wrapAttributes": true, //属性强制换行
+      "sortAttributes": true,
+      "proseWrap": "preserve",
+    }
+  },
+  "vetur.format.defaultFormatter.js": "vscode-typescript",
+  "editor.formatOnSave": true,
+  "editor.wordWrap": "off",
+  "eslint.autoFixOnSave": true,
+  "eslint.alwaysShowStatus": true,
+  "eslint.quiet": true,
+  "beautify.config": {
+    "brace_style": "collapse,preserve-inline"
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    {
+      "language": "vue",
+      "autoFix": true
+    }
+  ],
+  "editor.fontSize": 16,
+  // // 文件头部注释
+  "fileheader.customMade": {
+    "Descripttion": " ",
+    "Date": "Do not edit",
+    "LastEditors": "tande",
+    "LastEditTime": "Do not Edit"
+  },
+  //函数注释
+  "fileheader.cursorMode": {
+    "": "",
+    "param": "@param",
+    "return": ""
+  },
+  "window.zoomLevel": 0
+}
