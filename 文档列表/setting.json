@@ -1,46 +1,89 @@
 {
-  "vetur.format.options.tabSize": 4,
-  "vetur.format.options.useTabs": true,
-  "vetur.format.defaultFormatterOptions": {
-    "prettier": {
-      "semi": true, //默认添加分号
-      "printWidth": 300, //属性超过160个字符自动换行
-      "singleQuote": false, // js中双引号改成单引号
-      "wrapAttributes": true, //属性强制换行
-      "sortAttributes": true,
-      "proseWrap": "preserve",
+    "vetur.format.options.tabSize": 4,
+    "vetur.format.options.useTabs": true,
+    "vetur.validation.template": false,
+    "vetur.format.defaultFormatterOptions": {
+        "prettier": {
+            "semi": true, //默认添加分号
+            "printWidth": 120, //属性超过160个字符自动换行
+            "singleQuote": false, // js中双引号改成单引号
+            "wrapAttributes": false, //属性强制换行
+            "sortAttributes": false,
+            "proseWrap": "preserve",
+        },
+        "js-beautify-html": {
+            "wrap_attributes": "auto"
+        }
+    },
+    "vetur.format.defaultFormatter.js": "vscode-typescript",
+    "vetur.format.defaultFormatter.html": "js-beautify-html",
+    "editor.formatOnSave": true,
+    "editor.wordWrap": "off",
+    "eslint.autoFixOnSave": true,
+    "eslint.alwaysShowStatus": true,
+    "eslint.quiet": true,
+    "beautify.config": {
+        "brace_style": "collapse,preserve-inline"
+    },
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "html",
+        "vue",
+        {
+            "language": "html",
+            "autoFix": true
+        }, {
+            "language": "vue",
+            "autoFix": true
+        }
+    ],
+    "editor.fontSize": 14,
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false,
+    "editor.minimap.enabled": true,
+    "editor.formatOnPaste": true,
+    // // 文件头部注释
+    "fileheader.customMade": {
+        "Descripttion": " ",
+        "Date": "Do not edit",
+        "LastEditors": "tande",
+        "LastEditTime": "Do not Edit"
+    },
+    //函数注释
+    "fileheader.cursorMode": {
+        "": "",
+        "param": "@param",
+        "return": ""
+    },
+    "window.zoomLevel": 0,
+
+    "html.format.wrapAttributes": "auto",
+
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+    "files.autoSave": "afterDelay",
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true
+    },
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "files.autoSaveDelay": 3000,
+    "terminal.integrated.rendererType": "dom",
+    "search.followSymlinks": false,
+    "explorer.confirmDelete": false,
+    "files.associations": {
+        "*.cjson": "jsonc",
+        "*.wxss": "css",
+        "*.wxs": "javascript"
+    },
+    "emmet.includeLanguages": {
+        "wxml": "html"
     }
-  },
-  "vetur.format.defaultFormatter.js": "vscode-typescript",
-  "editor.formatOnSave": true,
-  "editor.wordWrap": "off",
-  "eslint.autoFixOnSave": true,
-  "eslint.alwaysShowStatus": true,
-  "eslint.quiet": true,
-  "beautify.config": {
-    "brace_style": "collapse,preserve-inline"
-  },
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    {
-      "language": "vue",
-      "autoFix": true
-    }
-  ],
-  "editor.fontSize": 16,
-  // // 文件头部注释
-  "fileheader.customMade": {
-    "Descripttion": " ",
-    "Date": "Do not edit",
-    "LastEditors": "tande",
-    "LastEditTime": "Do not Edit"
-  },
-  //函数注释
-  "fileheader.cursorMode": {
-    "": "",
-    "param": "@param",
-    "return": ""
-  },
-  "window.zoomLevel": 0
 }
