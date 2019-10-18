@@ -86,4 +86,67 @@
     "emmet.includeLanguages": {
         "wxml": "html"
     }
+}{
+  "vetur.format.options.tabSize": 4,
+  "vetur.format.options.useTabs": true,
+  // vetur 的自定义设置
+  "vetur.format.defaultFormatterOptions": {
+    "js-beautify-html": {
+      "wrap_attributes": "aligned-multiple"
+    },
+    "prettier": {
+      "semi": true, //默认添加分号
+      "printWidth": 300, //属性超过160个字符自动换行
+      "singleQuote": false, // js中双引号改成单引号
+      "wrapAttributes": false, //属性强制换行
+      "sortAttributes": false,
+      "proseWrap": "preserve",
+    }
+  },
+  "vetur.format.defaultFormatter.js": "none",
+  // 保存时格式化
+  "editor.formatOnSave": true,
+  "editor.wordWrap": "off",
+  "eslint.autoFixOnSave": true,
+  "eslint.alwaysShowStatus": true,
+  "eslint.quiet": true,
+  "beautify.config": {
+    "brace_style": "collapse,preserve-inline"
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    {
+      "language": "vue",
+      "autoFix": true
+    }
+  ],
+  // // 文件头部注释
+  "fileheader.customMade": {
+    "Descripttion": " ",
+    "Date": "Do not edit",
+    "LastEditors": "tande",
+    "LastEditTime": "Do not Edit"
+  },
+  //函数注释
+  "fileheader.cursorMode": {
+    "": "",
+    "param": "@param",
+    "return": ""
+  },
+  "window.zoomLevel": 1,
+  // tab 大小为2个空格
+  "editor.tabSize": 4,
+  // 开启 vscode 文件路径导航
+  "breadcrumbs.enabled": true,
+  // prettier 设置语句末尾不加分号
+  "prettier.semi": false,
+  // prettier 设置强制单引号
+  "prettier.singleQuote": true,
+  // 选择 vue 文件中 template 的格式化工具
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  "workbench.iconTheme": "vscode-icons",
+  "terminal.integrated.rendererType": "dom",
+  "debug.console.fontSize": 13,
+  "editor.fontSize": 13
 }
